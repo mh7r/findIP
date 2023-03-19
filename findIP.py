@@ -8,11 +8,11 @@ try:
     data = json.load((response))
     table = [["IP:", data["ip"]],
             ["Server:", data["org"]],
-            ["Sehir:", data["city"]],
-            ["Ulke:", data["country"]],
-            ["Bolge:", data["region"]]]
+            ["City:", data["city"]],
+            ["Country:", data["country"]],
+            ["Region:", data["region"]]]
     print(colored(tabulate(table), "blue"))
 except:
     print(colored("---------------------------", "cyan"))
-    print(colored("Baglantinizi kontrol ediniz", "red"))
+    print(colored("Check your network", "red"))
     print(colored("---------------------------", "cyan"))   
