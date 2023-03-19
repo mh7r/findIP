@@ -13,6 +13,6 @@ try:
             ["Bolge:", data["region"]]]
     print(colored(tabulate(table), "blue"))
 except:
-    print(colored("----------------------------", "cyan"))
+    print(colored("---------------------------", "cyan"))
     print(colored("Baglantinizi kontrol ediniz", "red"))
-    print(colored("----------------------------", "cyan"))
+    print(colored("---------------------------", "cyan"))   
